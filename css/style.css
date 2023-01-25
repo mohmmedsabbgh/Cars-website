@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Tajawal:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    /* font-family: 'Tajawal', sans-serif; */
+}
+
+/* Globel Var Color */
+:root {
+    --gold-color: #FBAF17;
+    --black-color: #000000;
+    --white-color: #fff;
+    --green-color-opcity: #25D366;
+    --gray-color: #F3F3F3;
+    --text-color: #707070;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gold-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gold-color);
+}
+
+/* Globle Tags Website */
+ul {
+    list-style: none;
+}
+
+/* Start Style Navbar */
+.iconresponsive {
+    position: absolute;
+    z-index: 100;
+    background-color: var(--gold-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+    cursor: pointer;
+    display: none;
+}
+
+.iconresponsive.active {
+    right: 200px;
+}
+
+.navbarLg {
+    background-color: var(--gray-color);
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbarLg .list {
+    padding-top: 5px;
+    margin-right: 50px;
+}
+
+.navbarLg ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbarLg ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+.navbarLg ul li a.active {
+    color: var(--gold-color);
+}
+
+.navbarLg ul li a:hover {
+    color: var(--gold-color);
+}
+
+.navbarLg .soclaMedia {
+    padding-top: 8px;
+}
+
+.navbarLg .soclaMedia svg {
+    border: 1px solid var(--black-color);
+    color: var(--gold-color);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.navbarLg .soclaMedia svg:hover {
+    background-color: var(--text-color);
+    color: var(--white-color);
+    transform: rotate(20deg);
+}
+
+/* Finsh Style Navbar */
+
+/* Start Style SectionOne */
+.sectionOne {
+    background-color: var(--gray-color);
+    position: relative;
+}
+
+.sectionOne .ContentDiv {
+    position: relative;
+    z-index: 1000;
+}
+
+.sectionOne .ContentDiv h2 {
+    max-width: 300px;
+}
+
+.sectionOne .ContentDiv p {
+    max-width: 400px;
+}
+
+.sectionOne .photoDiv .photoOne {
+    position: relative;
+    z-index: 100;
+}
+
+.sectionOne .photoan {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    background-color: var(--gold-color);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.sectionOne .photoan img {
+    width: 100%;
+    height: 500px;
+}
+
+/* Finsh Style SectionOne */
+
+/* Start Style SectionTow */
+.sectionTow .allRate {
+    flex-wrap: wrap;
+}
+
+.sectionTow .allRate span {
+    font-size: 21px;
+    color: var(--gold-color);
+}
+
+/* Finsh Style SectionTow */
+
+/* Start Style Section Three */
+.SectionThree {
+    position: relative;
+    background: var(--gray-color);
+}
+
+.SectionThree .mainTitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 122;
+    bottom: 130px;
+}
+
+.SectionThree .mainTitle p {
+    color: var(--gold-color);
+}
+
+.SectionThree .mainTitle .btn {
+    width: 130px;
+    border-radius: 3px;
+    background-color: var(--gold-color);
+    font-size: 14px;
+}
+
+.SectionThree .All_card {
+    position: relative;
+    z-index: 122;
+    bottom: 130px;
+    background-color: var(--white-color);
+}
+
+.SectionThree .All_card .photo_card img {
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.SectionThree .All_card .photo_card img:hover {
+    opacity: 0.8;
+    overflow: hidden;
+}
+
+.SectionThree .All_card .content_card {
+    padding: 15px;
+}
+
+.SectionThree::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 350px;
+    height: 220px;
+    background-color: var(--gold-color);
+    z-index: 1;
+}
+
+/* Finsh Style Section Three */
+
+/* Start Style Section Four */
+
+.sectionFour .carousel .carousel-caption {
+    background-color: #fbaf17b7;
+    margin: 0;
+    padding: 0;
+    border-radius: 50px;
+}
+
+.sectionFour .carousel .carousel-caption p {
+    margin: 0;
+    padding: 5px;
+}
+
+.sectionFour .manTitle {
+    padding: 0;
+    margin: 0;
+    color: var(--gold-color);
+}
+
+.sectionFour .DivTow {
+    padding: 5px;
+    box-shadow: 0 0 5px var(--gray-color);
+    border-radius: 5px;
+}
+
+.sectionFour .manTitleSlderTow {
+    justify-content: space-between;
+}
+
+.sectionFour .manTitleSlderTow div:nth-child(1) p {
+    color: var(--gold-color);
+}
+
+.sectionFour .manTitleSlderTow label {
+    cursor: pointer;
+}
+
+.sectionFour .sliderTow {
+    background-color: var(--gray-color);
+    padding: 5px;
+}
+
+.sectionFour .upup {
+    justify-content: space-between;
+}
+
+.sectionFour .upup .iconText svg {
+    font-size: 10rem;
+    color: var(--text-color);
+    opacity: 0.5;
+    padding: 5px;
+}
+
+.sectionFour .upup .contentphotoslider h6 {
+    color: var(--gold-color);
+}
+
+/* Finsh Style Section Four */
+
+/* Start Style SectionFive */
+.sectionFive {
+    background: url(../img/backgrounCar.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.sectionFive .photoCar {
+    border-radius: 5px;
+    background: linear-gradient(50deg, #F6F6F6, #EDF4F5);
+    backdrop-filter: plur(5px);
+}
+
+/* Start Style SectionFive */
+
+/* Start Style SectionSix And Page Blog*/
+.sectionSix {
+    position: relative;
+}
+
+.sectionSix::before {
+    position: absolute;
+    content: '';
+    width: 110px;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--gold-color);
+}
+
+.sectionSix .mainTitle {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sectionSix .mainTitle .btn {
+    width: 130px;
+    border-radius: 3px;
+    background-color: var(--gold-color);
+    font-size: 14px;
+}
+
+.sectionSix .mainTitle p {
+    color: var(--gold-color);
+    margin: 0;
+    padding: 0;
+}
+
+.photocard {
+    position: relative;
+}
+
+.AllCCard {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #fff;
+    filter: drop-shadow(0 15px 10px #cccccc63);
+}
+
+.photocard .contentDate {
+    /* position: absolute; */
+    top: 10px;
+    left: 10px;
+    background-color: #0000006b;
+    color: var(--white-color);
+    padding: 0px;
+    text-align: center;
+}
+
+.contentCardText {
+    position: relative;
+}
+
+.contentCardText .btn {
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.contentCardText h5::before {
+    position: absolute;
+    content: '';
+    right: 0;
+    width: 3px;
+    height: 30px;
+    background-color: var(--gold-color);
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+
+.contentCardText h5:hover:before {
+    width: 70%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 25px;
+}
+
+/* Finsh Style SectionSix And Page Blog*/
+
+/* Start Style Code Footer */
+.footer {
+    background-color: var(--black-color);
+}
+
+.footer .container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .soclaMedia svg {
+    border: 1px solid var(--white-color);
+    color: var(--gray-color);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+    background-color: var(--text-color);
+    flex-wrap: wrap;
+}
+
+.footer .soclaMedia ul {
+    flex-wrap: wrap;
+}
+
+/* Finsh Style Code Footer */
+
+/* Start Style page Services */
+.servises {
+    position: relative;
+}
+
+.servises::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    height: 150px;
+    background-color: var(--gold-color);
+    z-index: -1;
+}
+
+.servises .TitleUp {
+    background: linear-gradient(#000000cb, #000000cb), url(../img/breadcrumb-bg-3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.servises .mainTitleServesis h5 {
+    color: var(--gold-color);
+    animation: tobDown 5s linear 0s infinite alternate;
+
+}
+
+.servises .AllCardServises {
+    filter: drop-shadow(0 10px 5px #ccc);
+    border-radius: 5px;
+}
+
+/* Finsh Style page Services */
+
+/* Start Style page About Me */
+.aboutme .photoAbout {
+    position: relative;
+}
+
+.aboutme .photoAbout .photoLogoAbout {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000a6;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gold-color);
+    font-size: 100px;
+    transition: 0.3s ease-in-out;
+}
+
+.aboutme .photoAbout .photoLogoAbout img,
+svg {
+    transition: 0.3s ease-in-out;
+}
+
+.aboutme .photoAbout .photoLogoAbout img:hover,
+.aboutme .photoAbout .photoLogoAbout svg:hover {
+    transform: scale(1.2);
+}
+
+.aboutme .contentAbout h5 {
+    color: var(--gold-color);
+}
+
+@keyframes tobDown {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    25% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    75% {
+        transform: translateY(20px);
+    }
+
+    100% {}
+}
+
+/* Finsh Style page About Me */
+
+/* Start Style Page Articals */
+
+.Articals .container{
+    width: 80%;
+    margin: auto;
+}
+.Articals .photoArtical img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.Articals .contentphotoArtical .icon{
+    direction: ltr;
+    max-width: 95%;
+}
+.Articals .contentphotoArtical .icon p{
+    border-radius: 10px;
+}
+.Articals .contentphotoArtical .icon svg{
+    color: var(--gold-color);
+    font-size: 20px;
+}
+.Articals .contentParagrafh{
+    background-color: var(--white-color);
+    filter: drop-shadow(0 0 30px #cccccc77);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 90%;
+    margin: auto;
+}
+/* Finsh Style Page Articals */
+.countentUs .iframe{
+    background-color: var(--white-color);
+    padding: 5px;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 10px #ccc);
+}
+.countentUs iframe{
+    width: 100%;
+    height: 300px;
+}
+.countentUs .form{
+    background-color: var(--white-color);
+    filter: drop-shadow(0 0 10px #ccc);
+    border-radius: 5px ;
+    padding: 10px;
+}
+.countentUs .form form label{
+    margin-bottom: 10px;
+}
+.countentUs .form form label span{
+    color: var(--gold-color);
+    margin-left: 5px;
+}
+.countentUs .form form input , textarea{
+    border: none;
+    background-color: var(--gray-color);
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+}
+.countentUs .form form input:focus ,
+.countentUs .form form textarea:focus{
+    border: 1px solid var(--gold-color);
+}
+textarea{
+    resize: none !important;
+}
+/* Start Style Whatss App */
+.whatssapp{
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    z-index: 1111;
+}
+.whatssapp .titleWhatssap {
+    position: relative;
+}
+.whatssapp .titleWhatssap::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #000000;
+    border-right: 20px solid transparent;
+    transform: rotate(-135deg);
+    top: 11px;
+    right: 40px;
+}
+.whatssapp .titleWhatssap p{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: 10px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.whatssapp .iconUp{
+    background-color: var(--white-color);
+    filter: drop-shadow( 0 0 20px #888);
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    border-radius: 50%;
+
+}
+.whatssapp .icon{
+    background-color: #25D366;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whatssapp .icon a{
+    color: var(--white-color);
+    font-weight: bold;  
+    font-size: 20px;
+    
+}
+/* Finsh Style Whatss App */

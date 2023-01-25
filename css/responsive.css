@@ -1,0 +1,116 @@
+/* Start Responsive Navbar */
+:root {
+    --gold-color: #FBAF17;
+    --black-color: #000000;
+    --white-color: #fff;
+    --green-color-opcity: #25D366;
+    --gray-color: #F3F3F3;
+    --text-color: #707070;
+}
+@media(max-width:1004px) {
+    .navbarLg .soclaMedia {
+        display: none;
+    }
+
+    .sectionOne .ContentDiv h2 {
+        max-width: 100%;
+    }
+
+    .sectionOne .ContentDiv p {
+        max-width: 100%;
+    }
+}
+
+@media(max-width:655px) {
+    .iconresponsive {
+        display: block;
+        padding: 2px 6px;
+        position: fixed;
+        top: 0;
+        z-index: 1222;
+    }
+
+    .navbarLg {
+        width: 200px;
+        height: 100vh;
+        display: inline-block;
+        padding: 10px;
+        margin-right: -200px;
+        transition: 0.3s ease-in;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index:1001;
+        box-shadow: 0 0 10px var(--gold-color);
+    }
+
+    .navbarLg.active {
+        margin-right: 0px;
+    }
+
+    .navbarLg .list {
+        display: block;
+    }
+
+    .navbarLg ul li {
+        margin-right: 0px;
+        display: block;
+    }
+
+    .navbarLg .list ul {
+        margin-right: -55px;
+        margin-top: 15px;
+    }
+
+    .navbarLg .list ul li {
+        margin-bottom: 20px;
+        margin-right: 4px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navbarLg .list ul li:hover {
+        margin-right: 20px;
+    }
+
+    .navbarLg .soclaMedia ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        transition: 0.5s;
+    }
+
+    .navbarLg .soclaMedia ul li:hover {
+        margin-top: 5px;
+    }
+
+}
+
+@media(max-width:765px){
+    .sectionOne .photoan img{
+        width: 100%;
+        height: 330px;
+    }
+    .sectionOne .photoan{
+        position: absolute;
+        left: 0;
+        top: 150px;
+        background-color: var(--gold-color);
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+}
+@media(max-width:500px){
+    .sectionOne .photoan{
+        position: absolute;
+        left: 0;
+        top: 200px;
+        background-color: var(--gold-color);
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .SectionThree::before{
+        width: 80%;
+        height: 150px;
+    }
+}
+/* Finsh Responsive Navbar */
